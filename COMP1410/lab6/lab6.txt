@@ -1,0 +1,20 @@
+create student 
+first i create a struct student pointer
+I then allocate memory using malloc and 1 since im making one student
+I then allocate memory for the name of the length of the given name
+I then set the pointer of the id equal to the given id
+and the pointer of the name equal to the given name 
+
+free student
+I first free the name then free the student, i free the name first to avoid memory leak
+I then set the student to null
+
+change name
+I allocate enough memory for the new name using malloc
+I then check if the name is null, if it is I return false
+if not then i copy the new name onto the students name since it now has enougn memory to do so and return true
+
+run times
+create student is O(n) since I use strlen on the name
+free student is O(1) since free() is O(1)
+change name is O(n^2) since I use strlen on the new name and then str cpy on the name

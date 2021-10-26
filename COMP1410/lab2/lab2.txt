@@ -1,0 +1,28 @@
+
+just before line 5
+fib(5)
+main
+
+
+just before line 7
+fib(2)
+fib(3)
+fib(4)
+fib(5)
+main
+
+
+first time fib(0)
+fib(0)->return 0
+fib(2)
+fib(3)
+fib(4)
+fib(5)
+main
+
+explanation: order takesd two pointers and checks the value, if the first is smaller or equal it returns false if not it switches them and returns true
+
+swap_ptr takes two pointers at pointers and swaps them with eachother resulting in one pointer pointing to what the other pointer was pointing to and the same for the other pointer.
+
+
+

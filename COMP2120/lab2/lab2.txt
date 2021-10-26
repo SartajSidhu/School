@@ -1,0 +1,207 @@
+Script started on 2021-10-03 21:39:10-04:00 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj[00m$ java PizzaOrderc PizzaOrder.javas[Kjava PizzaOrderc PizzaOrder.java[6P PizzaOrderc PizzaOrder.java[6P PizzaOrders[Kjavac PizzaOrder.java[6P PizzaOrder[Kcd Documents; cd comp2120; cd lab2;
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ javac Pizzaord[K[K[KOrder.java
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOre[Kder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder[K]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder
+Welcome to Mike and Diane's Pizza
+Enter your first name: D = diaa ne
+Pizza Size (inches)   Cost
+        10            $10.99
+        12            $12.99
+        14            $14.99
+        16            $16.99
+What size pizza would you like?
+10, 12, 14, or 16 (enter the number only): 10
+What type of crust do you want? 
+(H)Hand-tossed, (T) Thin-crust, or (D) Deep-dish (enter H, T, or D): T
+All pizzas come with cheese.
+Additional toppings are $1.25 each, choose from:
+Pepperoni, Sausage, Onion, Mushroom
+Do you want Pepperoni? (Y/N): N
+Do you want Sausage? (Y/N): N
+Do you want Onion? (Y/N): N
+Do you want Mushroom? (Y/N): N
+
+Your order is as follows: 
+10 inch pizza
+Hand-tossed crust
+Cheese 
+Congratulations you have earned a discount of $2
+The cost of your order is: $8.99
+The tax is: $0.72
+The total due is: $9.71
+Your order will be ready for pickup in 30 minutes.
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrderc PizzaOrder.java
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ javac PizzaOrder.java[6P PizzaOrder
+Welcome to Mike and Diane's Pizza
+Enter your first name: d
+Pizza Size (inches)   Cost
+        10            $10.99
+        12            $12.99
+        14            $14.99
+        16            $16.99
+What size pizza would you like?
+10, 12, 14, or 16 (enter the number only): 12
+What type of crust do you want? 
+(H)Hand-tossed, (T) Thin-crust, or (D) Deep-dish (enter H, T, or D): T
+All pizzas come with cheese.
+Additional toppings are $1.25 each, choose from:
+Pepperoni, Sausage, Onion, Mushroom
+Do you want Pepperoni? (Y/N): N
+Do you want Sausage? (Y/N): N
+Do you want Onion? (Y/N): N
+Do you want Mushroom? (Y/N): N
+
+Your order is as follows: 
+12 inch pizza
+Hand-tossed crust
+Cheese 
+The cost of your order is: $12.99
+The tax is: $1.04
+The total due is: $14.03
+Your order will be ready for pickup in 30 minutes.
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrderc PizzaOrder.java[6P PizzaOrder
+Welcome to Mike and Diane's Pizza
+Enter your first name: df
+Pizza Size (inches)   Cost
+        10            $10.99
+        12            $12.99
+        14            $14.99
+        16            $16.99
+What size pizza would you like?
+10, 12, 14, or 16 (enter the number only): 14
+What type of crust do you want? 
+(H)Hand-tossed, (T) Thin-crust, or (D) Deep-dish (enter H, T, or D): T
+All pizzas come with cheese.
+Additional toppings are $1.25 each, choose from:
+Pepperoni, Sausage, Onion, Mushroom
+Do you want Pepperoni? (Y/N): N
+Do you want Sausage? (Y/N): N\
+Do you want Onion? (Y/N): N
+Do you want Mushroom? (Y/N): N
+
+Your order is as follows: 
+14 inch pizza
+Hand-tossed crust
+Cheese 
+The cost of your order is: $14.99
+The tax is: $1.20
+The total due is: $16.19
+Your order will be ready for pickup in 30 minutes.
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder
+Welcome to Mike and Diane's Pizza
+Enter your first name: 16  ha
+Pizza Size (inches)   Cost
+        10            $10.99
+        12            $12.99
+        14            $14.99
+        16            $16.99
+What size pizza would you like?
+10, 12, 14, or 16 (enter the number only): 16
+What type of crust do you want? 
+(H)Hand-tossed, (T) Thin-crust, or (D) Deep-dish (enter H, T, or D): T
+All pizzas come with cheese.
+Additional toppings are $1.25 each, choose from:
+Pepperoni, Sausage, Onion, Mushroom
+Do you want Pepperoni? (Y/N): T N
+Do you want Sausage? (Y/N): N
+Do you want Onion? (Y/N): N
+Do you want Mushroom? (Y/N): N
+
+Your order is as follows: 
+16 inch pizza
+Hand-tossed crust
+Cheese 
+The cost of your order is: $16.99
+The tax is: $1.36
+The total due is: $18.35
+Your order will be ready for pickup in 30 minutes.
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder
+Welcome to Mike and Diane's Pizza
+Enter your first name: hey
+Pizza Size (inches)   Cost
+        10            $10.99
+        12            $12.99
+        14            $14.99
+        16            $16.99
+What size pizza would you like?
+10, 12, 14, or 16 (enter the number only): 17
+Sorry that was not one of the size choices, so a 12 inch pizza will be made!
+What type of crust do you want? 
+(H)Hand-tossed, (T) Thin-crust, or (D) Deep-dish (enter H, T, or D): T
+All pizzas come with cheese.
+Additional toppings are $1.25 each, choose from:
+Pepperoni, Sausage, Onion, Mushroom
+Do you want Pepperoni? (Y/N): N
+Do you want Sausage? (Y/N): N
+Do you want Onion? (Y/N): N
+Do you want Mushroom? (Y/N): N
+
+Your order is as follows: 
+12 inch pizza
+Hand-tossed crust
+Cheese 
+The cost of your order is: $12.99
+The tax is: $1.04
+The total due is: $14.03
+Your order will be ready for pickup in 30 minutes.
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder
+Welcome to Mike and Diane's Pizza
+Enter your first name: Mike
+Pizza Size (inches)   Cost
+        10            $10.99
+        12            $12.99
+        14            $14.99
+        16            $16.99
+What size pizza would you like?
+10, 12, 14, or 16 (enter the number only): 10
+What type of crust do you want? 
+(H)Hand-tossed, (T) Thin-crust, or (D) Deep-dish (enter H, T, or D): k
+That was not one of the choices, so a Hand-tossed crust will be made!All pizzas come with cheese.
+Additional toppings are $1.25 each, choose from:
+Pepperoni, Sausage, Onion, Mushroom
+Do you want Pepperoni? (Y/N): N
+Do you want Sausage? (Y/N): N
+Do you want Onion? (Y/N): N
+Do you want Mushroom? (Y/N): N
+
+Your order is as follows: 
+10 inch pizza
+Hand-tossed crust
+Cheese 
+Congratulations you have earned a discount of $2
+The cost of your order is: $8.99
+The tax is: $0.72
+The total due is: $9.71
+Your order will be ready for pickup in 30 minutes.
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ java PizzaOrder
+Welcome to Mike and Diane's Pizza
+Enter your first name: Sartaj
+Pizza Size (inches)   Cost
+        10            $10.99
+        12            $12.99
+        14            $14.99
+        16            $16.99
+What size pizza would you like?
+10, 12, 14, or 16 (enter the number only): 10
+What type of crust do you want? 
+(H)Hand-tossed, (T) Thin-crust, or (D) Deep-dish (enter H, T, or D): D d
+All pizzas come with cheese.
+Additional toppings are $1.25 each, choose from:
+Pepperoni, Sausage, Onion, Mushroom
+Do you want Pepperoni? (Y/N): TY  Y
+Do you want Sausage? (Y/N): Y
+Do you want Onion? (Y/N): N
+Do you want Mushroom? (Y/N): N
+
+Your order is as follows: 
+10 inch pizza
+Hand-tossed crust
+Cheese Pepperoni Sausage 
+The cost of your order is: $13.49
+The tax is: $1.08
+The total due is: $14.57
+Your order will be ready for pickup in 30 minutes.
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/comp2120/lab2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/comp2120/lab2[00m$ exity[K
+exit
+
+Script done on 2021-10-03 21:45:51-04:00 [COMMAND_EXIT_CODE="0"]

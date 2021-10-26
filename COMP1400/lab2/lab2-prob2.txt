@@ -1,0 +1,18 @@
+Name: Sartaj Sidhu	UwinID: Sidhu52 	Lab section: 54		Class: Comp 1400
+
+part b
+problem 2)
+
+1: Start
+2: Read(n,y)
+3: x = 0
+4: While (n>=0) do
+5:	if (n%10==d) then
+6:		x+=1
+7:	n/=10
+8: End While
+9: Print(x)
+10:End
+
+
+

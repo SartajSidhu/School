@@ -1,0 +1,29 @@
+1. Start
+2. print(welcome message to user);
+3. print(all items to choose from);
+4. read(item);
+5. while item!='E' do
+6.		if item=='B' then
+7. 			print(enter the first number)
+8.			read(num1)
+9.			print(choose an operation)
+10.			read(op)
+11.			print(enter the second number)
+12.			read(num2)
+13.			if op=='+' then
+14.				print(the result is: num1+num2)
+15.			else if op=='-' then
+16.				print(the result is: num1-num2)
+17.			else if op=='*' then
+18.				print(the result is: num1*num2)
+19.			else if op=='/' then		
+20.				print(the result is: num1/num2)
+21.			print(all items to choose from)
+22.			read(item)
+23.		else 
+24.			print(sorry I cant do that yet)
+25.			print(all items to choose from)
+26.			read(item)
+27.End while
+28.print(exit message)
+29.End

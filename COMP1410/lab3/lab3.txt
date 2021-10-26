@@ -1,0 +1,23 @@
+matrix add
+since both matrixs must be n x 3 size
+i used to for loops one to go through the rows (n) and one to go through each element in each row 
+using the nested for loops i can look at each specific index of an nx3 array
+so I just added the first array and the second array into the new array all at the same index for every index
+this results in adding the values of each array together creating the new sum array
+
+negate column
+since the matrix must be n x3 that means the max columns is 3
+therefor i can use the same nested for loops used in matrix add to go through the array
+but this time i check if j==c 
+c is the given column  to negate
+if they are equal i will make the array at that specific index *-1
+it will do this every time j=c until the array has been fully passed through
+ resulting in the whole column = to get multiplied by -1 
+
+negate row
+since the matrix must be n x3 that means the max columns is 3
+therefor i can use the same nested for loops used in matrix add to go through the array
+but this time since we are checking with rows i use i==r
+r is the given row to negate
+there for if i==r then i set the pointer value to what it was *-1 
+each time j iterates i also add 1 to a so that it will keep going to the next value

@@ -1,0 +1,27 @@
+create node
+first make a new node ptr, then allocate memory for a node
+set the new nodes , item, left, right that was given in the parameters
+
+free tree
+if the root is null return as no need to free the node
+if not then recurse with the roots left node and right node, this allows it to go through the whole tree 
+then free the root
+
+height
+left and right vars
+if the root is null return 0 as its empty
+if not set left and right = to call height on the left node and the right node
+if left is more than right then return left +1, +1 because of the root
+if not the right must be greater then return right+1
+this allows it to go through the tree adding up each time until a null is reached and gives the longest height 
+
+num leaves
+if root is null return 0 since its empty
+if not return numleaves of the left node and right node +1, +1 for the root
+this allows it to go through the tree and adding 1 for each child until the children are null then it returns 0
+
+run times
+create node is just O(1) since we are only making 1 node always
+free tree is O(n) since you must free all nodes in the tree
+height is O(n) since you must go through all nodes in the tree to make sure you have the longest height
+numleaves is O(n) since you must add up all nodes in the tree

@@ -1,0 +1,20 @@
+Script started on 2020-09-25 20:02:33-04:00 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="211" LINES="50"]
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj[00m$ cd [Kfa[K[K fall2020
+bash: cd: fall2020: No such file or directory
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj[00m$ cd d[KDocuments/
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents[00m$ cd fall2020/
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/fall2020[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/fall2020[00m$ cd comp1400/
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/fall2020/comp1400[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/fall2020/comp1400[00m$ gcc -Wall firstPrg.c -o myProg
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/fall2020/comp1400[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/fall2020/comp1400[00m$ ./myProg
+Welcome to C!
+*************
+Good Bye!...
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/fall2020/comp1400[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/fall2020/comp1400[00m$ ./myProggcc -Wall firstPrg.c -o myProg
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/fall2020/comp1400[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/fall2020/comp1400[00m$ gcc -Wall firstPrg.c -o myProg./myProg[K
+Welcome to C!
+Sartaj
+Good Bye!...
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/fall2020/comp1400[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/fall2020/comp1400[00m$ exit
+exit
+
+Script done on 2020-09-25 20:04:38-04:00 [COMMAND_EXIT_CODE="0"]

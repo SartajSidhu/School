@@ -1,0 +1,23 @@
+Name: Sartaj Sidhu 				Id: 110039107
+part a 
+problem 2b)
+
+1: Start
+2: num = 0
+3: sum = 1
+4: divider = 2
+5: Read (num,num2)
+6: While (num<=num2) DO
+7:	While ((num / 2) >= divider) DO
+8: 		IF (num % divider == 0) Then
+9: 			sum=sum+ divider
+10: 		End IF
+11: 		divider = divider + 1
+12: 	End While
+13: 	IF (num == sum AND num != 1) Then
+14: 		Print (num , “ is a perfect number.”)
+15: 	Else
+16: 		num+=1
+17: 	End IF
+18: End While
+19: End.

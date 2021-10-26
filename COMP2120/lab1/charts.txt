@@ -1,0 +1,19 @@
+Hours	Rate	Pay(hand)	Pay(program)	
+30	10	300	300	
+40	10	400	400	
+50	10	550	550	
+				
+Item	Price	Tax	Total (hand)	Total(program)
+Gum	2	0.11	2.11	2.11
+Candy	5	0.275	5.275	5.275
+				
+diameter	Volume(hand)	Volume(program)		
+2	4.19	4.19		
+25.4	8580.25	8580.25		
+875000	3.50776E+17	3.50776E+17		
+				
+Miles	Gallons	Mileage(hand)	Mileage(program)	
+2000	100	20	20	
+500	25.5	19.61	19.61	
+241.5	10	24.15	24.15	
+100	0	undefined	infinity	

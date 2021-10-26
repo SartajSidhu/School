@@ -1,0 +1,11 @@
+find_id I loop through the array of students and check the current students id and if its equal to the given id, if it is i set found name to point to that id and return true if not i go trhough the rest of the students
+once i have gone through all students and none have the given id i return false
+
+this is O(n) since you are only going through the array and in worst possible case it will be the full length of the array, best case is the given id is the first one in the list making it O(1)
+
+find_name I loop through the array of students and check the current students name if it points to the given name meaning they are the same I add that id to the id arrasy and add one to the total, once I have looped through the array fully I return the total
+
+this is O(n) as well since you are only going through the array, the best case for find_name is the same as the worst case O(n) since you MUST go through all students in the array to exit the function unlike find_id
+
+change_name
+I use strcopy to copy the pointer given name to the pointer of the students name 

@@ -1,0 +1,19 @@
+Name: Sartaj Sidhu 			UwinID: 110039107
+
+part a 
+problem 1)
+
+1: Start
+2: Read(a)
+3: Read(b)
+4: While (a<=b) do
+5: 	if(a%4==0) then
+6:		if (a%10!=0) then
+7:			print(a)
+8:		else if(a%400==0) then
+9:			print(a)
+10:		End if
+11:	End if
+12:	a+=1
+13:End While
+14:End

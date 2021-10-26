@@ -1,0 +1,13 @@
+	     +Car              |
+--------------------------------	
+	-Yearmodel: Int        |
+	-Make: String          |
+	-Speed: Int            |
+--------------------------------
+   +Car(ym: Int, mk: String)   |
+        +getYM(): Int          |
+       +getMK(): String        |
+	+getSPD(): Int         |
+      +accelerate(): Void      |
+	+brake(): Void         |
+--------------------------------

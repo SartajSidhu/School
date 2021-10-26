@@ -1,0 +1,20 @@
+create node 
+I allocate memory for a node I then copy the guiven string onto that node and make the next pointer for that nodes next and i return the node
+
+free node 
+I save what the next node is with a pointer of next 
+I then free the current node
+Then i return the next node to keep going until next is null
+
+concat nodes
+I check if its null if it is I return
+if not I then add the old string and the string wanting to be added
+I then check if the next is null, if it isnt I add a space 
+this is so at the end there isnt an extra space
+I then recurse it by calliung concat nodes onto the next node
+this will keep going until the last node is reached
+
+run times
+create runs in O(n) since it uses strcpy
+freenode runs in O(n) aswell since it depends how many nodes are linked
+concat runs in O(n) since it uses how many nodes are linked

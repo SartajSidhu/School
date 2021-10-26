@@ -1,0 +1,70 @@
+printmat function 
+ just a function i created to easily print out the connect 4 board neatly 
+
+make move explain
+So I go through the rows in the specific column entered starting at the bottonm going up, I check if the lowest space is empty or is a "." if it isnt i keep going until i reach the top of the column. If there is an empty space i fill that space with the given player and return true if there isnt I return false
+
+I broke check win into 3 seperate functions 
+
+Check H checks all possible horizontal wins, i have a count variable to keep track of how many are in a row and check if the player wins, I have a forloop that goes through each row, I have a nested loop that is from 0-4 and then one more nested loop based off the previous loop. Since in one single row there are 4 possible ways to win horizontally i have the 0-4 for loop and the nested loop after that is for each specific value in those 4 possible out comes
+example:
+xxxx is one way to win
+oxxxxoo is another way to win
+ooxxxxo is another way to win
+lastly oooxxxx is the final way to win
+
+this way with my 2 loops I can check all 4 of these possiblities and the first loop is to chjeck if for each row
+I add one to the counter everytime the plyer letter shows up inside of one of the possiblities
+if the win counter = 4 i return true as the player has won 
+if it doesnt and Ive went through the possibility I sent the counter back to 0 so it doesnt interfere with the next possiblility. 
+if there are no wins horizontally on the whole board then i return false. 
+
+Next is check v which is basically the same as check H except checking each column if there is a vertical win
+for each column 
+there are only 3 possibilites for each column though as there can be max 6 in a column 
+
+next is check d which checks the diagnols
+I have two win counter varaibles this time so i can check multiple diagonals only using one loop 
+for the diagonals that go in this direction its easy to access them 
+.x....
+..x...
+...x..
+....x.
+that is what the first 2 big loops and 2 if statements are for
+for diagonals it depends how many possible wins there are with the size the 6 diagnoals have 3 ways to win which is the first loop 
+for diagonals with size 5 there are only 2 possible ways which is the next loop
+lastly for the diagonals with only 4 spots there is only 1 possibvle way so instead of looping through its easier to manually check it using 2 if statements. 
+then check for the opposite diagonals
+...x..
+..x...
+.x....
+x.....
+these kind
+
+putting all these functions together into check_win: if all return false then that means there are no wins whatsoever so its false but if even one returns true it means there was a win
+
+
+
+First capital function
+TO make the function ologn I use a binary search
+I set the lower to 0 and higher to the length -1 one to retrieve the midpoint
+I then check if the midpoint is equal to 0 if if the char at that index is uppercase if it is then return that char
+I then check if the char at the midpoint is upper and the Char before the midpoint is lower which means its the first uppcase as the lowercase letters must be before uppercase
+if the midpoint is a lower case then I sent the new lower to one greater thasn the midpoint
+if all of these dont pass then I set the new higher to the midpoint - 1 
+this will result in halving the string each time until we finsd the first cap 
+at the end if there is no capital letters in the string at all I return 0
+to briefly explain why this is olong is because in a binary search you dont end up searching everything and will take out many un wanted answers as an example
+aaaaaaaBC
+with only thje first iteration i will have already skipped the first 4 a's
+
+deepest substring function
+I have a count and a max
+I have max set at -1 just incase if there is a very small string with only 2 brackets the substring will still pass trhough when count > max
+I first loop through the string if I ever pass a ( I add one to the count : meaning ive entered a substring
+if I pass a ) i first subtract from the count then start a new loop going backwards until I hit a ( since if tehre is a ) there must have been a (. Once I hit the ( I set the max = to the count and out to the substring
+I then continue looping through the string to find ( or )
+this will go until the end of the string
+now with the max set if i find a new substring it will check if the count > then the max if it is then that means this newfound substring is deeper than the previous and replaces it with that and changes the max 
+this will result in making the out the deepest substring no matter what
+

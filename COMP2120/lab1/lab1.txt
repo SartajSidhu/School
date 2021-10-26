@@ -1,0 +1,90 @@
+Script started on 2021-09-26 17:26:13-04:00 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj[00m$ script lab1.txtcd documents; cd comp2120; cd lab1;
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ javac Pay,[K.java
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java Pay
+How many hours did you work? 30
+How much are you paid per hour? 10
+You earned $300.0
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java Pay
+How many hours did you work? 40
+How much are you paid per hour? 10
+You earned $400.0
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java Pay
+How many hours did you work? 50
+How much are you paid per hour? 10
+You earned $550.0
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ javac T[KSalesTax.java
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java SalesTax
+Item description:  Gum
+Item price:  $2
+Gum        $2.0
+Tax          $0.11
+Total        $2.11
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java SalesTax
+Item description:  Candy
+Item price:  $5
+Candy        $5.0
+Tax          $0.275
+Total        $5.275
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ javac Numerti[K[KicTypes.java
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java NumericTypes
+100.0 and 95.0 have an average of 97.5
+212 in Fahrenheit is 100.0 in Celsius.
+
+Enter your first name: Sartaj
+Enter your last name: Sidhu
+Sartaj Sidhu
+S
+SARTAJ SIDHU
+Length: 12
+Enter a diameter of a sphere: 2
+The volume of the sphere is: 4.19
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java NumericTypes
+100.0 and 95.0 have an average of 97.5
+212 in Fahrenheit is 100.0 in Celsius.
+
+Enter your first name: s
+Enter your last name: s
+s s
+s
+S S
+Length: 3
+Enter a diameter of a sphere: 25.4
+The volume of the sphere is: 8580.25
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java NumericTypes
+100.0 and 95.0 have an average of 97.5
+212 in Fahrenheit is 100.0 in Celsius.
+
+Enter your first name: s
+Enter your last name: s
+s s
+s
+S S
+Length: 3
+Enter a diameter of a sphere: 875000
+The volume of the sphere is: 350770273496516610.00
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ javac Mileage.java
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java mi[K[KMileahe[K[Kge
+Welcome this program will calculate your Mileage!
+How many miles driven?: 2000
+How many gallons used?: 100
+Your mileage is : 20.00MPG
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java Mileage
+Welcome this program will calculate your Mileage!
+How many miles driven?: 500
+How many gallons used?: 25.5
+Your mileage is : 19.61MPG
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java Mileage
+Welcome this program will calculate your Mileage!
+How many miles driven?: 241.5
+How many gallons used?: 10
+Your mileage is : 24.15MPG
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ java Mileage
+Welcome this program will calculate your Mileage!
+How many miles driven?: 100
+How many gallons used?: 0
+Your mileage is : InfinityMPG
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/documents/comp2120/lab1[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/documents/comp2120/lab1[00m$ exit
+exit
+
+Script done on 2021-09-26 17:33:07-04:00 [COMMAND_EXIT_CODE="0"]

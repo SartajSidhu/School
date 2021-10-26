@@ -1,0 +1,3 @@
+For the iteration function I just made a while loop and take the last digit of n and add it to a new variable x, then divide n by 10 so that next time it iterates it will take the second last digit of the original n number, this will keep happening until the number n is = to 0.
+
+For the recursive function i return 0 if n is 0 as thats the base case if n isnt 0 i return the last digit of n plus the function calling n/10. therfore the function will now get the second last digit of the original n and keep going until it returns 0, once it will return 0 it will add up all the digits and return that sum. 

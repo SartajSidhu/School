@@ -1,0 +1,17 @@
+Name: Sartaj Sidhu	UwinID: Sidhu52 	Lab section: 54		Class: Comp 1400
+
+part b
+problem 1)
+
+1: Start
+2: Read(n)
+3: x = 0
+4: while (n>=0) do
+5: 	x=x*10+n%10
+6:	n/=10
+7: End while
+8: Print(x)
+9: End
+
+
+

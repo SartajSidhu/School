@@ -1,0 +1,74 @@
+create list
+just make a new list pointer and allocate memory for it and set the front null
+O(1) since only making one list
+
+insert student
+first make a current node then parse through the linked list to check if the given id is already in the list
+if it is return false
+if not then check if the list is empty or the id is smaller than the front of the lists id 
+if it is add it to the front and return true
+if not loop through the list to find what would be infront of the given id
+then add it to the list at that position and return true;
+O(n^2) since you have to go through the list to check if its empty and then go through it again to find where the id should go
+
+remove front
+is a function i added to make remove student simplier
+it just removes the front of the list 
+O(1) since you only remove the front
+
+remove student 
+check if the list is empty if it is then return false
+check if the id is same as the front then call remove front and return true
+loop until we find the id
+if we dont find it and it is null return false since you cant remove somethihg not there
+then just remove the node and make the node after it take its place
+O(n) since you have to go through the whole list
+
+find student 
+loop through the list until the end and check if the ids are the same 
+if they are return the name
+if no return null as the id isnt in the list
+O(n) since you have to go through the whole list
+
+freelist 
+make a cur node to hold and next node which will be cur nodes next
+then loop through the list and free curnode name and node and then set curnode to next so that it will 
+go through the entire list
+then free the actual list at the end once all nodes and names have been freed
+O(n) since go through the whole list
+
+merge lists 
+make a cur node of one list front
+set out equal to the second list
+go through all of the first list inserting each node into out (mergeing the lists)
+then free both old lists
+O(n^2) since you go through the entire first list and then call insert node on all nodes which is O(n)
+
+check list
+returns true if all items are in order
+just check at each node if it is less than the next
+O(n) since it goes through the whole list
+
+print list
+prints the list neatly
+O(n) since it goes through the whole list
+
+create node 
+function to make insert node simipler
+just creates and returns a new root
+
+insert node
+check if tree is null then call create node to make a root
+check if the word is less than the root if it is then insert at the left
+if it isnt insert at the right
+use recursion if there are already nodes at the left or right to find a null space
+
+lookupword
+check if the tree is empty then return 0
+check if the word is equal to the root then return the value
+if noit then return recursively the left + right leafs as if the left is null and the right holds the value it will return the right + 0
+
+free tree
+check if the tree is empty then end the function 
+if not recursively go through the tree at each node and freeing each node until the root
+ 

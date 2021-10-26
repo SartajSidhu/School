@@ -1,0 +1,19 @@
+sample data
+
+circle area
+radius = 3, area = 28.27
+
+rectanglearea
+length = 5 width = 4, area = 20
+
+trianglearea
+base = 10 height = 5, area = 25
+
+circlecircumfrence
+radius = 3, circumfrence = 18.849
+
+rectangleperimiter
+length = 5 width = 4, perimiter = 18
+
+triangleperimiter
+s1= 5 s2 = 5 s3 = 5, perimiter = 15

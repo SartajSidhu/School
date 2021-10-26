@@ -1,0 +1,28 @@
+sort expand
+
+expand
+axpend
+adpenx
+adepnx
+adenpx
+adenpx
+
+code explained:
+so for the swap func I take in two pointers of chars I then create a temporary char that is equal to the first pointer
+i then switch the first pointer to the second pointer 
+I then set the second pointer to the temporary char which was the first pointer
+causing both values to swap 
+
+select min
+i have a min pointer and it starts at the array[0]
+i then get the length of the array and using the length make a forloop to go through every element in the array
+if the current value of min is greater than the next value the new min value becomes that
+this results in going through the whole array to get the smallest val and return that pointer
+
+str sort 
+I get the length of the string
+make a forloop that goes throughj the entire string
+then i make a min pointer that is the min of the str at pointer str+i
+then i do swap str+i with min val to move the smallest value to the front
+because of str+i once the smallest is in the front it takes the strong excluding that value and will return the next smallest value using selectmin(str+i).
+

@@ -1,0 +1,8 @@
+the outputs for a and b will be:  
+Hi. this is case 0
+Hi. this is case 1
+
+a and b dont go to case 2 since:
+i!=2
+
+the loop itterates 1 time for a and 2 times for b

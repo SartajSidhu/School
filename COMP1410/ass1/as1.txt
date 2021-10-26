@@ -1,0 +1,31 @@
+choose
+
+the base case is if the second number m is greater than the first n return 0 
+the next base case is if the second number m is 0 ex. c(5,0) or if both umbers n and m are the same ex. c(5,5).
+this will return 1
+finally i use recursion of c(n-1,m) + c(n-1,m-1) as the sum of those is equal to c(n,m)
+
+num divisors up to k
+
+i make a count var to add how many numbers are divisible by n from k to 0
+the base case is if k equals 0 as if you divide by 0 it is 0 and returns 0
+if n is divisible by k, add 1 to count
+return count + num divisors up to k(n,k-1)
+it will add to count everytime n is divisible by k and then once it returns 0 it will give the final val of count
+
+is prime
+
+a prime number is something that is only divisible by itself and 1
+so I just used my prev function num divisors by k with (n,n) and check if the count equals 2 (the number itself and 1) 
+if it does return true as the number is prime if not return false
+
+collatz
+
+make a steps var to keep track of steps
+print out n for the starting 
+loop while n doesnt =1 
+if n isnt divisble by two it means its an odd number so then i multiply it by 3 add one, print that number and ->
+and then add one to steps
+if the number is divisible by two i simply divide it print that number and -> and add one to steps
+print new line for formatting
+
