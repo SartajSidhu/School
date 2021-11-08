@@ -1,7 +1,7 @@
 /* 
 Welcome to my Command-Line Calculator (CLC)
 Developer: Sartaj Sidhu
-Version: 1
+Version: 2
 Date: 2020-10-19
 */
 #include <math.h>
