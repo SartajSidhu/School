@@ -1,0 +1,238 @@
+Script started on 2021-11-14 18:04:29-05:00 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj[00m$ cat Money.java
+cat: Money.java: No such file or directory
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj[00m$ cd Documents/SChoo[K[K[K[Kchool/COMP2120/lab7/
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[00m$ cat Money[K[K[K[K[K[K[K[K[Kls
+[0m[01;32mAddress.java[0m  [01;32mCreditCard.java[0m  [01;32mCreditCardDemo.java[0m  [01;32mMoney.java[0m  [01;32mMoneyDemo.java[0m  [01;32mPerson.java[0m  [01;32mlab7.txt[0m
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[00m$ cat Money.java
+/**
+   This class represents nonnegative amounts of money.
+*/
+
+public class Money
+{
+   // The number of dollars
+   private long dollars;
+
+   // The number of cents
+   private long cents;
+
+   /**
+      Constructor
+      @param amount The amount in decimal format.
+   */
+
+   public Money(double amount)
+   {
+      if (amount < 0)
+      {
+         System.out.println("Error: Negative amounts " +
+                            "of money are not allowed.");
+         System.exit(0);
+      }
+      else
+      {
+         long allCents = Math.round(amount * 100);
+         dollars = allCents / 100;
+         cents = allCents % 100;
+      }
+   }
+
+   // ADD LINES FOR TASK #1 HERE
+   // Document and write a copy constructor
+
+   /**
+      Copy Constructor
+      @param obj is a money object already made.
+   */
+   public Money(Money obj){
+      this.dollars=obj.dollars;
+      this.cents=obj.cents;
+   }
+
+   /**
+      The add method
+      @param otherAmount The amount of money to add.
+      @return The sum of the calling Money object
+              and the parameter Money object.
+   */
+
+   public Money add(Money otherAmount)
+   {
+      Money sum = new Money(0);
+
+      sum.cents = this.cents + otherAmount.cents;
+
+      long carryDollars = sum.cents / 100;
+
+      sum.cents = sum.cents % 100;
+
+      sum.dollars = this.dollars +
+                    otherAmount.dollars +
+                    carryDollars;
+
+      return sum;
+   }
+
+   /**
+      The subtract method
+      @param amount The amount of money to subtract.
+      @return The difference between the calling Money
+              object and the parameter Money object.
+   */
+
+   public Money subtract (Money amount)
+   {
+      Money difference = new Money(0);
+
+      if (this.cents < amount.cents)
+      {
+         this.dollars = this.dollars - 1;
+         this.cents = this.cents + 100;
+      }
+
+      difference.dollars = this.dollars - amount.dollars;
+      difference.cents = this.cents - amount.cents;
+
+      return difference;
+   }
+
+   /**
+      The compareTo method
+      @param amount The amount of money to compare against.
+      @return -1 if the dollars and the cents of the
+              calling object are less than the dollars and
+              the cents of the parameter object.
+              0 if the dollars and the cents of the calling
+              object are equal to the dollars and cents of
+              the parameter object.
+              1 if the dollars and the cents of the calling
+              object are more than the dollars and the
+              cents of the parameter object.
+   */
+
+   public int compareTo(Money amount)
+   {
+      int value;
+
+      if(this.dollars < amount.dollars)
+         value = -1;
+      else if (this.dollars > amount.dollars)
+         value = 1;
+      else if (this.cents < amount.cents)
+         value = -1;
+      else if (this.cents > amount.cents)
+         value = 1;
+      else
+         value = 0;
+
+      return value;
+   }
+
+   // ADD LINES FOR TASK #2 HERE
+   // Document and write an equals method
+   /**
+      equals method
+      @param obj Money obj to check if its equal to another money obj
+      @return true if equal false if not
+   */
+  public boolean equals(Money obj){
+      if(dollars==obj.dollars && cents==obj.cents){
+          return true;
+      }
+      else{
+          return false;
+      }
+  }
+
+   // Document and write a toString method
+   /**
+      toString method
+      @return a string that makes it look like money 
+   */
+  @Override
+  public String toString(){
+      if(cents<10){
+          return "$"+dollars+".0"+cents;
+      }
+      else{
+        return "$"+dollars+"."+cents;
+      }
+  }
+
+}]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[00m$ catc[K Creditc[KCard.java
+public class CreditCard {
+    private Money balance;
+    private Money creditLimit;
+    private Person owner;
+
+    
+    public CreditCard(Person newH, Money limit){
+        owner = newH;
+        creditLimit = limit;
+        balance = new Money(0);
+    }
+
+    public Money getBalance() {
+        //Money secure = new Money(balance);
+        //return secure;
+        return balance;
+    }
+
+    public Money getCreditLimit() {
+        Money secure = new Money(creditLimit);
+        return secure;
+    }
+
+    public String getPersonals() {
+        return owner.toString();
+    }
+
+    public void charge(Money amount){
+        if(creditLimit.compareTo(amount.add(balance)) == -1){
+            System.out.println("Exceeds credit limit");
+        }
+        else{
+            balance = balance.add(amount);
+        }
+    }
+
+    public void payment(Money amount){
+        balance = balance.subtract(amount);
+    }
+
+
+
+
+}
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[00m$ javac Money.java
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[00m$ javac MoneyDemp[Ko.java
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[00m$ java MoneyDemo 
+The current amount is $500.00
+Adding $10.02 gives $510.02
+Subtracting $10.88 gives $499.14
+$10.02 equals $10.02
+$10.88 does not equal $10.02
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[00m$ javac Credi[KitCard.java
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[00m$ javac CreditCardDemo.java
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[00m$ Ja[K[Kjava CreditCardDemo 
+Diane Christie, 237J Harvey Hall, Menomonie, WI 54751
+Balance: $0.00
+Credit Limit: $1000.00
+
+Attempting to charge $200.00
+Balance: $200.00
+
+Attempting to charge $10.02
+Balance: $210.02
+
+Attempting to pay $25.00
+Balance: $185.02
+
+Attempting to charge $990.00
+Exceeds credit limit
+Balance: $185.02
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2120/lab7[00m$ exit
+exit
+
+Script done on 2021-11-14 18:07:51-05:00 [COMMAND_EXIT_CODE="0"]
