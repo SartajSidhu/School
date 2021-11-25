@@ -5,9 +5,6 @@ public class Solver {
         BufferedReader br = new BufferedReader(fn);
         String sentence = br.readLine();
         StringBuilder secret = new StringBuilder();
-        //if(br.readLine()!=null){
-            //sentence = br.readLine();
-        //}
         String parts[] = sentence.split(" ");
         
         for (int i =0; i<parts.length;i+=5){
