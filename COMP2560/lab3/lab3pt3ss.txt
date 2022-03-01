@@ -1,0 +1,3 @@
+part 3
+the loop never ends and is infinite which is the bug. it gets stuck in it because of the buffer of chars.
+to fix this just clear the buffer each time. 

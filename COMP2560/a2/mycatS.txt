@@ -1,0 +1,36 @@
+Script started on 2022-02-18 23:07:17-05:00 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj[00m$ cat mycat.c
+cat: mycat.c: No such file or directory
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj[00m$ cat mycat.c[4P./a.outgcc ssq5.ccd Documents/School/COMP2560/a2./a.out[Kcd Documents/School/COMP2560/a2
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ cat mycat.c
+#include <stdio.h>
+#include <fcntl.h>
+
+int main(int argc, char* argv[]){
+    int f = open(argv[1], O_RDONLY);
+    char c;
+    while(read(f,&c,1) == 1){
+        putc(c, stdout);
+    }
+    putc('\n',stdout);
+}
+
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ my[K[Kgcc mycat.c
+[01m[Kmycat.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmycat.c:7:11:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kread[m[K’; did you mean ‘[01m[Kfread[m[K’? [[01;35m[K-Wimplicit-function-declaration[m[K]
+    7 |     while([01;35m[Kread[m[K(f,&c,1) == 1){
+      |           [01;35m[K^~~~[m[K
+      |           [32m[Kfread[m[K
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ ./a[Ka.out test.txt
+hello this is a test
+i hope this is all printed
+
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ cast[K[Kt text.txt
+cat: text.txt: No such file or directory
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ ls
+[0m[01;32ma.out[0m  [01;32mmycat.c[0m  [01;32mmycatS.txt[0m  [01;32mmycatT.log[0m  [01;32mqss10.c[0m  [01;32mssq2.c[0m  [01;32mssq3.c[0m  [01;32mssq4.c[0m  [01;32mssq5.c[0m  [01;32mt2.txt[0m  [01;32mtest.txt[0m
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ cat text.txt
+cat: text.txt: No such file or directory
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ exit
+
+Script done on 2022-02-18 23:08:28-05:00 [COMMAND_EXIT_CODE="1"]

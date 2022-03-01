@@ -1,0 +1,288 @@
+Script started on 2022-02-18 23:16:28-05:00 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj[00m$ ls./a.out out.txt test.txt new.txtgcc ssq4.c[Kcat[C[C[C[C[C[C[Cd Documents/School/COMP2560/a2
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ cat ssq5.c
+#include <stdio.h>
+#include <fcntl.h>
+#include<unistd.h>
+#include<stdio.h>
+#include<sys/wait.h>
+#include <stdlib.h>
+void childFunction(char*line);
+int main(int argc, char *argv[]){
+    char start[]="This program makes simple arithmetics\n";
+    char enter[]="Enter an arithmatic statement i.e 34 + 132>\n";
+    char create[]="Created a child to make your operation, waiting\n";
+    char inp[100];
+    write(1,start,sizeof(start)-1);
+    while(1){
+        fflush(stdin);
+        fflush(stdout);
+        write(1,enter,sizeof(enter)-1);
+        read(0,inp,sizeof(inp)-1);
+        pid_t pid = fork();
+        if(pid){
+            int exitNum;
+            write(1,create,sizeof(create)-1);
+            wait(&exitNum);
+            exitNum = exitNum >> 8;
+            if(exitNum == 50) {
+                printf("%s\n", "Wrong Statement");
+            } 
+            else if(exitNum == 100) {
+                printf("%s\n", "Division by Zero");
+            }
+            else if(exitNum == 200) {
+                printf("%s\n", "Wrong Operator");
+            }
+        }
+        else{
+            childFunction(inp);
+        }
+    }
+    return 0;
+}
+void childFunction(char*line){
+    char work[]="I am a child working for my parent\n";
+    int n1,n2;
+    char op;
+    char out[100];
+    write(1,work,sizeof(work)-1);
+    int scanned = sscanf(line,"%d %c %d", &n1,&op,&n2);
+    if(scanned !=3){
+        exit(50);
+    }
+    else{
+        if(op=='+'){
+            sprintf(out, "Result = %d", n1 + n2); 
+        }
+        else if(op == '-'){
+            sprintf(out, "Result = %d", n1 - n2);
+        }
+        else if(op == '*'){
+            sprintf(out, "Result = %d", n1 * n2);
+        }
+        else if(op == '/'){
+            if(n2 == 0){
+                exit(100);
+            }
+            sprintf(out, "Result = %d", n1 - n2);
+        }
+        else{
+            exit(200);
+        }
+    }
+    printf("%s\n", out);
+    exit(0);
+}
+
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ ss[K[Kgcc ssq5.c
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ ./a.out 
+This program makes simple arithmetics
+Enter an arithmatic statement i.e 34 + 132>
+5 + 10
+Created a child to make your operation, waiting
+I am a child working for my parent
+Result = 15
+Enter an arithmatic statement i.e 34 + 132>
+5 * 10
+Created a child to make your operation, waiting
+I am a child working for my parent
+Result = 50
+Enter an arithmatic statement i.e 34 + 132>
+5 10 - 5
+Created a child to make your operation, waiting
+I am a child working for my parent
+Result = 5
+Enter an arithmatic statement i.e 34 + 132>
+10 / 5
+Created a child to make your operation, waiting
+I am a child working for my parent
+Result = 5
+Enter an arithmatic statement i.e 34 + 132>
+5 / 0
+Created a child to make your operation, waiting
+I am a child working for my parent
+Division by Zero
+Enter an arithmatic statement i.e 34 + 132>
+5 _ 0
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Operator
+Enter an arithmatic statement i.e 34 + 132>
+2 2
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Operator
+Enter an arithmatic statement i.e 34 + 132>
+2
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Operator
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Operator
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Operator
+Enter an arithmatic statement i.e 34 + 132>
+Exit
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+sti op    #include<stdio.h> 
+#include<stdlib.h>
+#include<unistd.h> 
+#include<fcntl.h>
+#include<string.h>
+
+int main(int argc, char *argv[]){ 
+   int fd = open(argv[argc-1], O_WRONLY | O_CREAT | O_TRUNC, 0644);
+   int f;
+   char c[400];
+   char buffer;
+   int n = 0;
+    
+   if(fd < 0){
+       exit(1);
+   }
+    
+   for(int i = 1; i<argc-1; i++){
+       f = open(argv[i], O_RDONLY);
+       while(read(f, &buffer, 1) == 1){
+           c[n] = buffer;
+           n++;
+       }
+       close(f);    
+   }
+   
+   write(fd, c, strlen(c));    
+
+   close(fd);
+   exit(0);
+}Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+Created a child to make your operation, waiting
+I am a child working for my parent
+Wrong Statement
+Enter an arithmatic statement i.e 34 + 132>
+^C
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ exit
+
+Script done on 2022-02-18 23:18:13-05:00 [COMMAND_EXIT_CODE="130"]

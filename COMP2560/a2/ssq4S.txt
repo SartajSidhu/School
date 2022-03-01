@@ -1,0 +1,27 @@
+Script started on 2022-02-18 23:14:45-05:00 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj[00m$ gcc ssq4.ccat[C[C[C[C[C[C[Cd Documents/School/COMP2560/a2
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ cat ssq4.c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(int argc, char *argv[]){
+    FILE *outFile = fopen(argv[argc-1],"w"), *f;
+    char buff[400];
+
+    for(int i=1; i<argc-1; i++){
+        f = fopen(argv[i],"r");
+        while (fgets(buff, 400, f)) {
+            fprintf(outFile, "%s", buff);
+        }
+        fclose(f);
+    }
+    fclose(outFile);
+}]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ gcc ssq4.c
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ .a/a[K[K[K/a.out out.txt tesdt[K[Kt.tst[K[Kxt new.txt
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ ls
+[0m[01;32ma.out[0m    [01;32mmycatS.txt[0m  [01;32mnew.txt[0m  [01;32mqss10.c[0m  [01;32mssq2S.txt[0m  [01;32mssq3.c[0m     [01;32mssq3s.txt[0m  [01;32mssq4S.txt[0m  [01;32mssq5.c[0m  [01;32mtest.txt[0m
+[01;32mmycat.c[0m  [01;32mmycatT.log[0m  [01;32mout.txt[0m  [01;32mssq2.c[0m   [01;32mssq2T.log[0m  [01;32mssq3T.log[0m  [01;32mssq4.c[0m     [01;32mssq4T.log[0m  [01;32mt2.txt[0m
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ exit
+
+Script done on 2022-02-18 23:15:47-05:00 [COMMAND_EXIT_CODE="0"]

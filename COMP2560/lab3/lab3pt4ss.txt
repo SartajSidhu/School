@@ -1,0 +1,6 @@
+part 4
+a - the file size was 441
+
+b - it wil cause a problem once reaching the -1 as it is the same as EOF there for it will only read 10 bytes
+
+c- file size is 10 since i uncommented since it writes -1 then ends the program

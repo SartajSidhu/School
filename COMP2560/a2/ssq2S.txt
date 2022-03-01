@@ -1,0 +1,37 @@
+Script started on 2022-02-18 23:09:11-05:00 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj[00m$ cat text.txtls[Kcat text.txt./a.out test.txt[5Pgcc mycat.ccat[C[C[C[C[C[C[C[Cd Documents/School/COMP2560/a2
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ cat ssq2.c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]){
+   FILE *f, *fout;
+   f = fopen(argv[1], "r");
+   fout = fopen(argv[2], "w");
+   int len[400];
+   char buff[400];
+   int i = 1;
+   int x;
+   len[0] = 0;
+   
+   while(!feof(f)){
+       fgets(buff, 400, f);
+       if(feof(f)){
+           break;
+       } 
+       len[i] = ftell(f);
+       i+=1;
+   }  
+  
+   for(x=i-2; x>=0; x--){
+       fseek(f, len[x], 0);
+       fgets(buff, 400, f);
+       fputs(buff, fout);
+   }
+   fclose(f);
+   fclose(fout);
+}]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ gcc ssq2.c
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ ./a.out test.txt t2.txt
+]0;sartaj@Sartajs-PC: /mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[01;32msartaj@Sartajs-PC[00m:[01;34m/mnt/c/Users/Sartaj/Documents/School/COMP2560/a2[00m$ exit
+
+Script done on 2022-02-18 23:09:56-05:00 [COMMAND_EXIT_CODE="0"]
