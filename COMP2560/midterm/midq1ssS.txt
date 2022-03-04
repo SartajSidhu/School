@@ -1,0 +1,65 @@
+Script started on 2022-03-02 12:17:02-05:00 [TERM="xterm-256color" TTY="/dev/pts/48" COLUMNS="98" LINES="24"]
+[?2004h]0;sidhu52@charlie: ~/Documents/comp2650/midterm[01;32msidhu52@charlie[00m:[01;34m~/Documents/comp2650/midterm[00m$ cat midq1ss.c
+[?2004l//Sartaj Sidhu 110039107
+//1+1+0+0+3+9+1+0+7 = 22
+// 22/3 = 1 therefore must be second child process or (child 1)
+#include <stdio.h> 
+#include <stdlib.h>
+#include <unistd.h>
+#include<sys/wait.h>
+
+int main(){
+    int pid = fork();
+    int pid2;
+    //child 0
+    if(pid==0){
+        sleep(3);
+    printf("Child 0 PID is: %d, PPID is: %d\n",getpid(),getppid());
+    }
+    else{
+        pid = fork();
+        //child 1
+        if(pid==0){
+            int exitNum;
+            wait(&exitNum);
+            exitNum = exitNum >> 8;
+            if(exitNum == 50){
+                printf("proper exit\n");
+            }
+            pid2 = fork();
+            if(pid2==0){
+            printf("Child child PID is: %d, PPID is: %d\n",getpid(),getppid());
+                exit(50);
+            
+            }
+
+            sleep(2);
+        printf("Child 1 PID is: %d, PPID is: %d\n",getpid(),getppid());
+        }
+        else{
+            pid = fork();
+            //child 2
+            if(pid==0){
+        printf("Child 2 PID is: %d, PPID is: %d\n",getpid(),getppid());
+            }
+            else{
+                sleep(3);
+            }
+        }
+    }
+}
+[?2004h]0;sidhu52@charlie: ~/Documents/comp2650/midterm[01;32msidhu52@charlie[00m:[01;34m~/Documents/comp2650/midterm[00m$ gcc midq1ss.c - [K0 mid1[Kq1ss
+[?2004l[01m[Kgcc:[m[K [01;31m[Kerror: [m[Kmidq1ss: No such file or directory
+[01m[Kgcc:[m[K [01;31m[Kerror: [m[Kunrecognized command-line option ‘[01m[K-0[m[K’
+[?2004h]0;sidhu52@charlie: ~/Documents/comp2650/midterm[01;32msidhu52@charlie[00m:[01;34m~/Documents/comp2650/midterm[00m$ gcc midq1ss.c -0 midq1ss[1P midq1sso midq1ss
+[?2004l[?2004h]0;sidhu52@charlie: ~/Documents/comp2650/midterm[01;32msidhu52@charlie[00m:[01;34m~/Documents/comp2650/midterm[00m$ ./midq1ss
+[?2004lChild 2 PID is: 985586, PPID is: 985583
+Child child PID is: 985587, PPID is: 985585
+Child 1 PID is: 985585, PPID is: 985583
+Child 0 PID is: 985584, PPID is: 985583
+[?2004h]0;sidhu52@charlie: ~/Documents/comp2650/midterm[01;32msidhu52@charlie[00m:[01;34m~/Documents/comp2650/midterm[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;sidhu52@charlie: ~/Documents/comp2650/midterm[01;32msidhu52@charlie[00m:[01;34m~/Documents/comp2650/midterm[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;sidhu52@charlie: ~/Documents/comp2650/midterm[01;32msidhu52@charlie[00m:[01;34m~/Documents/comp2650/midterm[00m$ exit
+[?2004lexit
+
+Script done on 2022-03-02 12:18:39-05:00 [COMMAND_EXIT_CODE="130"]
